@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>array sorting</h2>
+    <button onclick="ascending()">ascending</button>
+    <button onclick="descending()">descending</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        var num = [1, 200, 20, 67]
+        document.getElementById("p1").innerHTML = "orignal array is" + num;
+        function ascending() {
+            num.sort(function (a, b) { return a - b });
+            document.getElementById("p2").innerHTML = "array in ascending order" + num;
+        }
+        function descending() {
+            num.sort(function (a, b) { return b - a });
+            document.getElementById("p3").innerHTML = "array in descending order" + num;
+        }
+
+    </script>
+</body>
+
+</html>
