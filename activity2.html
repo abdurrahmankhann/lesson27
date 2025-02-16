@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>array mapping</h2>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        function myfunction(a) {
+            return a - 100
+        }
+        num = [400, 300, 350, 100];
+        document.getElementById("p1").innerHTML = "orignal array is " + num;
+
+        document.getElementById("p2").innerHTML = "orignal array is " + num.map(myfunction);
+    </script>
+</body>
+
+</html>
